@@ -13,11 +13,17 @@ export async function initializeRuntimeExports(){
         const { getAssemblyExports, getConfig } = await dotnetRuntimePromise;
         const config = getConfig();
         exports = await getAssemblyExports(config.mainAssemblyName);
+
+        console.log(await testFuncAsync());
     }
 }
 
 export async function nativeCompress(data) {
     return exports.MainApp.GzipCompress(data);
+}
+
+export async function testFuncAsync() {
+    return exports.MainApp.TestFuncAsync();
 }
 
 async function createRuntime() {
