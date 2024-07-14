@@ -41,4 +41,4 @@ dist-ssr
 *.sln
 *.sw?
 
-./wwwroot/public/wasm
+/wwwroot/public/wasm

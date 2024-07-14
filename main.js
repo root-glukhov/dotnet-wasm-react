@@ -17,7 +17,7 @@ export async function initializeRuntimeExports(){
 }
 
 export async function nativeCompress(data) {
-    return exports.DotNetWasmReact.Compressor.GzipCompress(data);
+    return exports.MainApp.GzipCompress(data);
 }
 
 async function createRuntime() {
