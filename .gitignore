@@ -1,0 +1,12 @@
+bin
+obj
+dist
+node_modules
+wasm
+logs
+vscode
+
+*.log
+*.local
+
+.DS_Store
