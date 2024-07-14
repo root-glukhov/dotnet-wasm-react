@@ -18,10 +18,10 @@
     dotnet publish -c Release
     ```
 
-4. The above will also automatically copy the generated `AppBundle` to `compressy-frontend/public/vendor` directory, so it can dynamically be imported.
-5. Change your working directory to `compressy-frontend` and install `npm` dependencies
+4. The above will also automatically copy the generated `AppBundle` to `wwwroot/public/vendor` directory, so it can dynamically be imported.
+5. Change your working directory to `wwwroot` and install `npm` dependencies
     ```bash
-    cd compressy-frontend
+    cd wwwroot
     npm install
     ```
 6. Now we can either directly run the dev server
