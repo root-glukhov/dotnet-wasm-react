@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "DotNetWasmReact.dll",
   "resources": {
-    "hash": "sha256-IQrn7seWcNKSN8YQuzt5+xFUptvkFXa7QpVUtJsA8aY=",
+    "hash": "sha256-nJbM6FhTs1AKedvxcMnvJ9RuAd00bCRUQ+T1n9RZcRY=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-b00omV3aPihZEW3Zp5GR45fOdStt8hSAweFFylw4qZc="
     },
@@ -9,10 +9,10 @@
       "dotnet.runtime.js": "sha256-soZyw6XWXOLKhA26AOyzSpCP5cAsw1wvhdPHSYNTMfQ="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-Wxorc8YGJ8JulVfc3JDqDhpxUZJl6V66n6FVAMgd78c="
+      "dotnet.native.wasm": "sha256-teXwKrWcpNlS6rFfxHTrEerDIHJYgLbYJg8uFyt7ZPo="
     },
     "assembly": {
-      "DotNetWasmReact.wasm": "sha256-giRYTnRy27U1mRgpLQrjywF957hclH8IMEFmLf6DrDU=",
+      "DotNetWasmReact.wasm": "sha256-Skttaa/H9Wlm3a6c5adE6FEMqDRqRYUECiKzt/2Lz7U=",
       "System.Console.wasm": "sha256-pSmRmXrv7Pzt/J9Esy2mE5RXokmMtQo0SQQB2dL8qUA=",
       "System.IO.Compression.wasm": "sha256-zg0kBq5N+SsRbY0jvg/OOzzT5fiGOcGvE3JfgB18K0E=",
       "System.Private.CoreLib.wasm": "sha256-qdVVnl2yVWLq+A28rG045HqkIc0QanXTraP/HPYns8w=",

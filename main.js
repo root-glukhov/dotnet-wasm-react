@@ -7,32 +7,31 @@ globalThis.window = globalThis;
 let dotnetRuntimePromise = undefined;
 let exports = undefined;
 
-async function createRuntime() {
-    try {
-        return dotnet
-            .withDiagnosticTracing(false)
-            .withModuleConfig({
-                locateFile: (path, prefix) => {
-                    return '/' + path;
-                }
-            })
-            .create();
-    } catch (err) {
-        console.error(err);
-        throw err;
-    }
-}
-
 export async function initializeRuntimeExports(){
     if (!dotnetRuntimePromise) {
         dotnetRuntimePromise = createRuntime();
         const { getAssemblyExports, getConfig } = await dotnetRuntimePromise;
         const config = getConfig();
         exports = await getAssemblyExports(config.mainAssemblyName);
-        console.log(exports)
     }
 }
 
 export async function nativeCompress(data) {
     return exports.DotNetWasmReact.Compressor.GzipCompress(data);
+}
+
+async function createRuntime() {
+    try {
+        return dotnet
+            .withDiagnosticTracing(false)
+            .withModuleConfig({
+                // locateFile: (path, prefix) => {
+                //     return '/' + path;
+                // }
+            })
+            .create();
+    } catch (err) {
+        console.error(err);
+        throw err;
+    }
 }

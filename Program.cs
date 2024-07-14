@@ -3,19 +3,16 @@ using System.IO;
 using System.IO.Compression;
 using System.Runtime.InteropServices.JavaScript;
 
-namespace DotNetWasmReact;
+#pragma warning disable CA1416 
 
 
-public partial class Compressor
+public partial class MainApp
 {
+	public static void Main(string[] args) { }
 
-	public static void Main(string[] args)
-	{
-		
-	}
 
-	[JSExport]
-	internal static byte[] GzipCompress(byte[] data)
+    [JSExport]
+    internal static byte[] GzipCompress(byte[] data)
 	{
 		try
 		{
